@@ -1,0 +1,140 @@
+.box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height:80vh;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+}
+
+.email h2 {
+    color: #f1356d;
+    margin-bottom: 10px;
+}
+   
+.text h2 {
+    color: #4979ff;
+    margin-bottom: 10px;
+}
+  
+.topRight {
+    padding-left: 15px;
+    margin-left: 30px;
+    border-left: 1px solid #fafafa;
+}
+
+.topRight button {
+    display: none;
+}
+  
+.emailBottom, .textBottom {
+    color: white;
+    background-color: #333;
+    margin-left: -8px;
+    margin-bottom: -15px;
+    margin-right: -15px;
+}
+
+.listButton {
+    display: none;
+}
+
+.emailBottom h1, .textBottom h1 {
+    margin-left: 10px;
+}
+  
+.emailBottom h2 {
+    color: #f1356d;
+    margin-left: 10px;
+}
+  
+.textBottom h2 {
+    color: #4979ff;
+    margin-left: 10px;
+}
+
+.textBottom button {
+    background-color: #4979ff;
+    margin-top: 25px;
+}
+    
+.emailClicked, .textClicked {
+    padding-left: 0;
+    padding-bottom: 100px;
+    text-align: center;
+}
+  
+.emailClicked h1 {
+    color: #f1356d;
+}
+
+.textClicked h1 {
+    color: #4979ff;
+}
+  
+.emailClicked p, .textClicked p {
+    padding-left: 10px;
+}
+
+.graphs {
+    display: flex;
+  }
+
+.graph {
+    display: grid;
+    grid-template-columns: 250px 100px;
+}
+
+.graph button {
+    margin-top: 26px;
+}
+
+.respBtn {
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .topRight button {
+        display: block;
+    }
+
+    .listButton {
+        display: block;
+        margin-left: 10px;
+    }
+    
+    .sentList {
+        background: #333
+    }
+    
+    .sentList button {
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .textSentList {
+        background: #333
+    }
+
+    .textSentList button {
+        background:#4979ff;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    
+    .btn {
+        background:#4979ff;
+    }
+
+    .button {
+        display: none;
+    }
+    
+    .respBtn {
+        display: block;
+    }
+}

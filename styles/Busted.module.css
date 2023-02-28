@@ -1,0 +1,65 @@
+.box {
+    text-align: center;
+}
+
+.box h1 {
+    font-size: 90px;
+    margin-top: 0px;
+}
+
+
+.box p {
+    font-size: 30px;
+}
+
+.sidebar {
+    position: fixed;
+    display: grid;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    top: 80px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #f1356d;
+    padding: 5px 10px 5px 10px;
+}
+
+.sidebar a:hover {
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+    font-size: 30px;
+    color: #4979ff;
+    text-align: center;
+    padding: 5px 0px 5px 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .box h1 {
+        font-size: 50px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .box img {
+        width: 300px;
+    }
+
+    .sidebar {
+        position: relative;
+        top: auto;
+        padding-bottom: 90px;
+    }
+
+    .sidebar h1 {
+        font-size: 30px;
+        margin-top: -15px;
+    }
+   
+}

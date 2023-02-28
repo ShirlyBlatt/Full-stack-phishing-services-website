@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+  height: 83%;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: "Nunito";
+  color: #333;
+  padding-top: 60px;
+  padding-bottom: 90px;
+  height: 100%;
+}
+
+#__next, .layout {
+  height: 100%;
+}
+
+.groupEmail button {
+  margin-top: 20px;
+  height: 70px;
+  width: 150px;
+  font-size: 18px;
+}
+
+.groupNumber button {
+  margin-top: 20px;
+  background-color: #4979ff;
+  height: 70px;
+  width: 150px;
+  font-size: 18px;
+}
+
+button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+

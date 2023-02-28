@@ -1,0 +1,27 @@
+.graph {
+    margin-top: -20px;
+    margin-right: 50px;
+    margin-left: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.responsiveGraphs {
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .responsiveGraphs{
+        display: block;
+        margin-left: 50px;
+    }
+    .responsiveGraphs button {
+        margin-top: 20px;
+    }
+    .graph {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+    }
+}

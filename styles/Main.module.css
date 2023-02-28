@@ -1,0 +1,52 @@
+.main {
+    display: flex;
+    flex: auto;
+    height: 110%;
+    padding-bottom: 40px;
+  }
+  
+.right {
+    width: 100%;
+    color: white;
+}
+
+.right img {
+  width: 76%;
+}
+
+.left {
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+  }
+
+.left h2 {
+  margin-top: 130px;
+}
+.image {
+  margin-left: -30px;
+  margin-top: 200px;
+  display: flex;
+}
+
+.image img {
+  margin-left: 30px;
+  width: 140px;
+}
+  
+.main button {
+    background-color: #333;
+    margin-right: 10px;
+    margin-left: 5px;
+    width: 130px;
+}
+  
+.main h1 {
+    padding-right: 10px;
+}
+
+
+@media screen and (max-width: 900px){
+  .right img {
+    display: none;
+  }
+}

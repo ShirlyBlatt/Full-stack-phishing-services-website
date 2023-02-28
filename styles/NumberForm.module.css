@@ -1,0 +1,49 @@
+.box {
+  position: fixed;
+}
+
+.numberForm label {
+  display: block;
+}
+
+.numberForm h1 {
+  color: #4979ff;
+  margin-bottom: 30px;
+}
+
+.numberForm input {
+  width: 80%;
+  padding: 6px 10px;
+  max-width: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.numberForm button {
+  background:  #4979ff;
+}
+
+.button button{
+  margin-top: 70px;
+  margin-left: 12px;
+  width: 150px;
+  height: 40px;
+  background: rgb(241, 53, 109);
+}
+
+.groups {
+  margin-top: 40px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.resp {
+  display: none;
+}
+
+@media screen and (max-width: 900px){
+  .box {
+      position: relative;
+      max-width: 380px;
+  }
+}

@@ -1,0 +1,7 @@
+sudo docker build -t phishing .
+sudo docker run --rm -v /app/node_modules --env-file env.local -p 80:80 --link mongodb:mongodb --name phishing phishing
+
+
+sudo ip l set wg0 down / up
+DATABASE :
+sudo docker run --name mongodb -v mongo-data:/data/db mongo:latest

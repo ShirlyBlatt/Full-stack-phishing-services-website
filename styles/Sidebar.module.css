@@ -1,0 +1,55 @@
+.box {
+    position: fixed;
+    overflow-y: auto;
+    height: 82%;
+    padding-right: 20px;
+    border-right: 1px solid #fafafa;;
+    padding-top: 20px;   
+    min-width: 200px; 
+}
+
+.box h1 {
+    font-size: 25px;
+}
+.box img {
+    display: none;
+}
+
+.box button{
+    margin-top: 10px;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    color: #333;
+    width: 200px;
+    text-align: left;
+}
+
+.box button:hover {
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.innerBox {
+    display: grid;
+}
+
+.innerBox button {
+    text-align: left;
+    font-weight: 400;
+    padding-left: 30px;
+    background-color: #f2f2f2;
+    color: #333;   
+}
+
+@media screen and (max-width: 900px) {
+    .box {
+        position: relative;
+        height: 100%;
+    }
+
+    .box img {
+        display: block;
+        width: 40px;
+        margin-left: -5px;
+    }
+
+}

@@ -1,0 +1,81 @@
+.box {
+    display: grid;
+    grid-template-columns: 370px 6fr 1fr;
+    height: 100%;
+}
+  
+.email, .number {
+    border-left: 1px solid #fafafa;
+    text-align: center;
+    height: 100%;
+}
+  
+.email h1 {
+    color: #f1356d;
+}
+
+.number h1 {
+    color: #4979ff;
+}
+  
+.list {
+    padding-left: 10px;
+    align-items: center;
+    display: grid;
+}
+  
+.deleteButton button {
+    margin-bottom: 30px;
+    background-color: rgb(139, 139, 141);
+    width: 150px;
+}
+
+.resp, .respText {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    .box {
+        display: block;
+    }
+
+    .email, .number, .insert {
+        display: none;
+    }
+
+    .resp, .respText {
+        display: grid;
+        justify-content: right;
+        position: relative;
+        right: 15px;
+        bottom: 85px;
+    
+    }
+    .respText button , .respNumberList button {
+        background: #4979ff;
+    }
+
+    .respNumberList, .respEmailList{
+        background: #333;
+        text-align: center;
+        margin: 10px -10px 10px -10px;
+       }
+
+    .deleteButton button{
+        background-color: rgb(139, 139, 141);
+    }
+
+    .hide {
+        display: inline;
+    }
+    .respGroups {
+        min-height: 400px;
+    }
+
+
+
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+wg pubkey < private
+sudo ip link add wg0 type wireguard
+sudo ip addr add 10.0.0.2/24 dev wg0
+sudo wg set wg0 private-key ./private
+sudo ip link set wg0 up
+sudo wg set wg0 peer LUFOFsndw7gWRQMmvxrPIDLXqw+u7fYtIvfYr2DAFXI= allowed-ips 10.0.0.1/32 endpoint 161.35.196.65:55767 persistent-keepalive 20
+sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+sudo iptables -A INPUT -i wg0 -p tcp --dport 80 -j ACCEPT
+sudo iptables -A INPUT -i wg0 -j DROP

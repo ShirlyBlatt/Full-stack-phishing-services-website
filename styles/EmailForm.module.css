@@ -1,0 +1,41 @@
+.box {
+    position: fixed;
+}
+  
+.emailForm label {
+    display: block;
+}
+  
+.emailForm h1 {
+    color: #f1356d;
+    margin-bottom: 30px;
+  }
+  
+.emailForm input {
+    width: 80%;
+    padding: 6px 10px;
+    max-width: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+
+.button button{
+    margin-top: 70px;
+    margin-left: 12px;
+    width: 150px;
+    height: 40px;
+    background: #4979ff;
+} 
+
+.groups {
+  margin-top: 40px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 900px){
+  .box {
+      position: relative;
+      max-width: 380px;
+  }
+}
