@@ -7,7 +7,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 To run the development server, use one of the following commands:
 
-```bash
 npm run dev
 # Or
 yarn dev
